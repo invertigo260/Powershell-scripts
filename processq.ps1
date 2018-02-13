@@ -26,7 +26,7 @@ $ie = New-Object -ComObject "InternetExplorer.Application"
 $ie.visible=$false
 $ie.silent=$true
 #echo "Attempting to pull data from site .."
-$ie.navigate("https://safeway.service-now.com/incident_list.do?sysparm_query=active%3Dtrue%5Eassigned_toANYTHING%5Eassignment_group%3D43e9cfc86f9b2100f93056df8e3ee4da%5EstateIN1%2C2%2C3")
+$ie.navigate("######## WEBSITE URL HERE ########")
 while($ie.Busy) { Start-Sleep -Milliseconds 50 }
 #echo "Extracting relevent data ..."
 
